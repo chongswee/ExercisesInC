@@ -33,23 +33,23 @@ ThinkOS questions (CH1-3):
 https://github.com/chongswee/ExercisesInC/blob/master/reading_questions/ch1-3%20hw.docx
 
 
-1.	[HEAD FIRST C] What should you look out for when deallocating memory?
+1.	[HEAD FIRST C] What should you look out for when deallocating memory? >>>
 When deallocating memory from a pointer, you should always look out for any other pointer which is pointing to the same address. Accessing an invalid pointer/address will result in segmentation fault.
 
-2.	[HEADFIRST C] How should you increase the size of an array?
+2.	[HEADFIRST C] How should you increase the size of an array? >>>
 	Once the size of the array is set or when malloc is used to allocate a fixed amount of memory, you would need to reallocate it in order to increase its size.
 Function void *realloc(void *ptr, size_t new_size );
 The function takes in 2 arguments: ptr, and new size, it then either expands the memory allocated for the array (if subsequent memory is free), or deallocate the current memory and assign a new memory of the new size. 
 [http://en.cppreference.com/w/c/memory/realloc]
 
-3.	[THINK OS]Can we use hard disk storage for ram memory?
+3.	[THINK OS]Can we use hard disk storage for ram memory? What is the benefit of having a larger memory /RAM?>>>
 Yes, windows is already using your part of your storage as virtual memory. It is possible to allocate more memory as virtual memory through settings. However, the transfer speed of storage if often much slower than memory, which will result in a slower processing speed. 
-What is the benefit of having a larger memory /RAM?
 Processes run on mainly memory. With larger memory, more processes can be run at once, hence it allows better multitasking. 
 
-4.	[HEAD FIRST C] What is the purpose of a library? When is the library processed during compilation?
-Library is often a compilation of functions and features to ease programming. For example, math.h library contains functions which allow calculation of trigo, log, and squareroot. String.h contains function to join, search string etc.. Although it is possible to create a new function which returns a squareroot etc, it is more convenient and often more efficient to use existing libraries for your function. The library is processed in the first step of compilation: pre-processing stage. 
-5. 	[THINKOS] What are the benefits of a compiled language ?
+4.	[HEAD FIRST C] What is the purpose of a library? When is the library processed during compilation? >>>
+Library is often a compilation of functions and features to ease programming. For example, math.h library contains functions which allow calculation of trigo, log, and squareroot. String.h contains function to join, search string etc.. Although it is possible to create a new function which returns a squareroot etc, it is more convenient and often more efficient to use existing libraries for your function. The library functions are processed in the linking stage. 
+
+5. 	[THINKOS] What are the benefits of a compiled language ? >>>
 Compiled languages allows program to be compiled and processed into a executable file. The executable file will contain all the required libraries. Optimization options are available during the compilation process, which means that compiled language can perform better at run time (after being compiled properly). 
 Interpretted language, on the other hand, can be less efficient as checks are done during run time instead of compile time, while might reduce its performance. Also, libaries have to be properly imported, and interpretter installed when the same file is run on other environments. 
 Executable file, does not require user to import library, and can run on most systems without any additional installation of an interpretter. 
