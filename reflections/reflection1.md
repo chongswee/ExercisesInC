@@ -32,6 +32,7 @@ CH2: https://github.com/chongswee/ExercisesInC/tree/master/exercises/ex02
 ThinkOS questions (CH1-3): 
 https://github.com/chongswee/ExercisesInC/blob/master/reading_questions/ch1-3%20hw.docx
 
+Exam Question and Answer:
 
 1.	[HEAD FIRST C] What should you look out for when deallocating memory? >>>
 When deallocating memory from a pointer, you should always look out for any other pointer which is pointing to the same address. Accessing an invalid pointer/address will result in segmentation fault.
