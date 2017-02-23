@@ -52,3 +52,10 @@ Population in china : long (32 bits - up to 4,294,967,296 )
 	
 Compiling programs separately (into separate object code files first) will reduce the time required	to compile by reducing the need to recompile unmodified codes. 
 Linking can be done at the end where all the files are compiled and each object file is updated. For a large program, the time saving can be significant. 
+
+
+HFC: 
+	EX 2.5: https://github.com/chongswee/ExercisesInC/blob/master/exercises/ex02.5/find_track_complete_final.c
+	EX 3: https://github.com/chongswee/ExercisesInC/blob/master/exercises/ex03/tee_cs.c
+	EX 4: I read through the chapter but I had some technical difficulties executing the make file. I will surely upload the 		soltion together with the next reflection.  
+TOS:
